@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" id="body">
+            <img src="./images/logo.svg" alt="logo" id="logo">
+            <div id="links">
+                <a href="javascript:void(0)" onclick="nav1()">
+                    Features <img src="./images/icon-arrow-down.svg" alt="drop-down" id="down">
+                    <div class="nav1" id="nav1">
+                        <a href="#"><img src="./images/icon-todo.svg" alt="todo"> Todo List</a>
+                        <a href="#"><img src="./images/icon-calendar.svg" alt="calendar"> Calendar</a>
+                        <a href="#"><img src="./images/icon-reminders.svg" alt="reminders"> Reminders</a>
+                        <a href="#"><img src="./images/icon-planning.svg" alt="planning"> Planning</a>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" onclick="nav2()">
+                    Company <img src="./images/icon-arrow-down.svg" alt="drop-down" id="down2">
+                    <div class="nav2" id="nav2">
+                        <a href="#">History</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </a>
+                <a href="">Careers</a>
+                <a href="">About</a>
+            </div>
+            <div id="register">
+                <button type="submit" class="login">Login</button>
+                <button type="submit" class="register">Register</button>
+            </div>
+            <div id="menu"><img src="./images/icon-menu.svg" alt="menu" onclick="pressMenu()"></div>
+        </nav>
+    </header>
+    <article>
+        <section id="sidebar">
+            <img src="./images/icon-close-menu.svg" alt="close" id="close" onclick="pressClose()">
+            <div id="links-mobile">
+                <a href="javascript:void(0)" onclick="mobile()">
+                    Features <img src="./images/icon-arrow-down.svg" alt="drop-down" id="down-mobile">
+                    <div class="nav" id="nav1-mobile">
+                        <a href="#"><img src="./images/icon-todo.svg" alt="todo"> Todo List</a>
+                        <a href="#"><img src="./images/icon-calendar.svg" alt="calendar"> Calendar</a>
+                        <a href="#"><img src="./images/icon-reminders.svg" alt="reminders"> Reminders</a>
+                        <a href="#"><img src="./images/icon-planning.svg" alt="planning"> Planning</a>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" onclick="mobile2()">
+                    Company <img src="./images/icon-arrow-down.svg" alt="drop-down" id="down2-mobile">
+                    <div class="nav" id="nav2-mobile">
+                        <a href="#">History</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </a>
+                <a href="">Careers</a>
+                <a href="">About</a>
+            </div>
+            <div id="register-mobile">
+                <button type="submit" class="login">Login</button>
+                <button type="submit" class="register">Register</button>
+            </div>
+        </section>
+        <section>
+            <img src="./images/image-hero-mobile.png" alt="image-hero-mobile" id="mobile">
+            <div id="column1">
+                <h1>Make <br class="break"> remote work</h1>
+                <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+                    productivity soar.</p>
+                <button type="submit">Learn more</button>
+            </div>
+            <aside id="column2">
+                <img src="./images/image-hero-desktop.png" alt="image-hero-desktop">
+            </aside>
+        </section>
+    </article>
+    <footer>
+        <img src="./images/client-databiz.svg" alt="edatabiz">
+        <img src="./images/client-audiophile.svg" alt="audiophile">
+        <img src="./images/client-meet.svg" alt="meet">
+        <img src="./images/client-maker.svg" alt="maker" id="maker">
+    </footer>
+    <script src="./index.js"></script>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://twitter.com/_GeekyCoder_">Geeky Coder</a>.
+    </div>
+</body>
+
+</html>
